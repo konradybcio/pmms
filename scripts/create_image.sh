@@ -1,7 +1,7 @@
-./dtbTool --version=3 -o dt.img dtb && \
-../tools/mkbootimg/mkbootimg \
+./scripts/dtbTool --version=3 -o dt.img dtb && \
+./tools/mkbootimg/mkbootimg \
 --kernel zImage \
---ramdisk initrd-debug \
+--ramdisk ./prebuilts/initrd-debug \
 --base 0x80000000 \
 --dt dt.img \
 -o boot.img \
