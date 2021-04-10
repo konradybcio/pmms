@@ -1,5 +1,5 @@
 ./dtbTool --version=3 -o dt.img dtb && \
-./mkbootimg \
+../tools/mkbootimg/mkbootimg \
 --kernel zImage \
 --ramdisk initrd-debug \
 --base 0x80000000 \

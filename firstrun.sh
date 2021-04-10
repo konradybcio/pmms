@@ -1,0 +1,3 @@
+cd tools/mkbootimg
+make
+
