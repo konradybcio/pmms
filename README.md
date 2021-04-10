@@ -7,7 +7,7 @@ It's a set of tools and scripts to make the development easier.
 DO *NOT* use this if you you use your PinePhone as your main device.
 This MAY damage the modem PERMANENTLY. No warranties!
 
-
+-------------------------------------
 
 To get mainline going on your modem:
 
