@@ -1,0 +1,9 @@
+./dtbTool --version=3 -o dt.img dtb && \
+./mkbootimg \
+--kernel zImage \
+--ramdisk initrd-debug \
+--base 0x80000000 \
+--dt dt.img \
+-o boot.img \
+--cmdline "PMOS_NO_OUTPUT_REDIRECT" \
+--tags-addr 0x81E00000
