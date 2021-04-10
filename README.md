@@ -11,7 +11,7 @@ This MAY damage the modem PERMANENTLY. No warranties!
 
 To get mainline going on your modem:
 
-Unlock the modem (instructions adapted from [xnux.eu](https://xnux.eu/devices/feature/modem-pp.html):
+Unlock the modem (instructions adapted from [xnux.eu](https://xnux.eu/devices/feature/modem-pp.html)):
 
 
 ```
