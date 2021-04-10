@@ -35,7 +35,7 @@ AT+QADBKEY="<your unlock code>"
 AT+QCFG="usbcfg",0x2C7C,0x125,1,1,1,1,1,1,0
 ```
 
-
+If you want to, replace dtb/qcom-mdm9607-quectel-eg25.dtb and zImage files with your own ones.
 
 If you're running this for the first time, run `./firstrun.sh`
 
