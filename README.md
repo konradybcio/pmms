@@ -35,7 +35,7 @@ AT+QADBKEY="<your unlock code>"
 AT+QCFG="usbcfg",0x2C7C,0x125,1,1,1,1,1,1,0
 
 # Reboot the modem to fastboot
-adb reboot fastboot
+adb reboot bootloader
 
 # Flash a custom bootloader build
 # You can either use the shipped prebuilt, or compile it from [1]
