@@ -33,6 +33,18 @@ cc unlocker.c
 # To unlock the modem, pass the first two commands from the unlocker [in the TTY]
 AT+QADBKEY="<your unlock code>"
 AT+QCFG="usbcfg",0x2C7C,0x125,1,1,1,1,1,1,0
+
+# Reboot the modem to fastboot
+adb reboot fastboot
+
+# Flash a custom bootloader build
+# You can either use the shipped prebuilt, or compile it from [1]
+fastboot flash aboot prebuilts/emmc_appsboot.mbn
+
+# Reboot your modem to make sure everything is fine
+fastboot reboot
+
+# The modem should now boot to its own OS and if it does, it's ready!
 ```
 
 If you want to, replace dtb/qcom-mdm9607-quectel-eg25.dtb and zImage files with your own ones.
@@ -46,3 +58,5 @@ Now, simply run `sudo ./qletsgo.sh` (or ./q[tab][enter] ;))
 Should the modem boot, running `telnet 173.16.42.1` should drop you to an initrd shell.
 
 Have fun!
+
+[1] https://github.com/Biktorgj/quectel_lk
