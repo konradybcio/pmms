@@ -5,5 +5,5 @@
 --base 0x80000000 \
 --dt dt.img \
 -o boot.img \
---cmdline "PMOS_NO_OUTPUT_REDIRECT" \
+--cmdline "PMOS_NO_OUTPUT_REDIRECT rootfstype=ramfs root=/dev/ram0" \
 --tags-addr 0x81E00000
